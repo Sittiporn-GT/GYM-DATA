@@ -1,0 +1,17 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.pyplot import rcParams
+import seaborn as sns
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_samples, silhouette_score
+import matplotlib.cm as cm
+
+
+from google.colab import files
+uploaded = files.upload()
+
+gym = pd.read_csv("gym_members_exercise_tracking.csv")
